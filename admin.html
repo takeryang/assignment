@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a class="logo" href="#"><img src="./assets/images/logo-ANSWER.svg" alt=""></a>
+
+        <ul class="menu">
+            <li><a href="#"><i class="fas fa-chart-line"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-comments"></i>Question</a></li>
+            <li><a href="./index.html"><i class="fas fa-receipt"></i>Assignment</a></li>
+            <li><a href="#"><i class="fas fa-video"></i>Course</a></li>
+            <li><a class="page-admin" href="./admin.html"><i class="fas fa-user-cog"></i>Admin</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i>Settings</a></li>
+        </ul>
+
+        <ul class="account">
+            <li class="account-img"><img
+                    src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                    alt=""></li>
+            <li class="account-admin">Andy Chen<br><span>andy0401@mail.com</span></li>
+        </ul>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <h2>Assignment</h2>
+
+            <div class="navbar">
+                <!-- Button trigger modal -->
+                <a class="add-admin" href="" data-toggle="modal" data-target="#add-admin"><i class="fas fa-plus"></i>Add
+                    New Admin</a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="add-admin" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">New Admin</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="account">
+                                    <h6>Account</h6>
+                                    <form action="" method="post">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name">
+
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" name="email">
+                                    </form>
+                                </div>
+
+                                <div class="vrification">
+                                    <h6>Verification</h6>
+                                    <div class="verified"><i class="fas fa-exclamation-triangle"></i>Unverified</div>
+                                    <a href="#">Send Verification Mail</a>
+                                </div>
+
+                                <div class="access-level">
+                                    <form action="" method="post">
+                                        <select name="access-level" id="access-level">
+                                            <option value="">-Choose access level-</option>
+                                            <option value="Level-1">Level-1</option>
+                                            <option value="Level-2">Level-2</option>
+                                            <option value="Level-3">Level-3</option>
+                                        </select>
+                                    </form>
+                                </div>
+
+                                <div class="custom-access">
+                                    <h6>Custom Access</h6>
+                                    <form action="" method="post">
+                                        <div><input type="checkbox" id="lecture" name="lecture"><label
+                                                for="lecture">Lecture</label></div>
+                                        <div><input type="checkbox" id="Coupon" name="Coupon"><label
+                                                for="Coupon">Coupon</label></div>
+                                        <div><input type="checkbox" id="Message" name="Message"><label
+                                                for="Message">Message</label></div>
+                                        <div><input type="checkbox" id="Setting" name="Setting"><label
+                                                for="Setting">Setting</label></div>
+                                        <div><input type="checkbox" id="task-menu" name="task-menu"><label
+                                                for="task-menu">task menu</label></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-remind"><a href=""><i class="fas fa-search"></i></a><a href=""><i
+                            class="fas fa-bell"></i></a></div>
+            </div>
+        </div>
+
+        <div class="admin-list">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID<i class="fas fa-arrow-down"></i></th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Verified</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" data-toggle="modal" data-target="#view-admin">#1</th>
+                        <td data-toggle="modal" data-target="#view-admin">Emir Wicks</td>
+                        <td data-toggle="modal" data-target="#view-admin">emir.wicks@mail.com</td>
+                        <td data-toggle="modal" data-target="#view-admin">Yes</td>
+                        <td>
+                            <div><a href="" data-toggle="modal" data-target="#view-admin"><i
+                                        class="fas fa-eye"></i></a><a href="" data-toggle="modal"
+                                    data-target="#edit-admin"></i><i class="fas fa-pen"></i></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#2</th>
+                        <td>Zaina Goldsmith</td>
+                        <td>zaina.goldsmith@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#3</th>
+                        <td>Mahima Lopez</td>
+                        <td>mahima.Lopez@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#4</th>
+                        <td>Pharrell Murray</td>
+                        <td>pharrell.Murray@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#5</th>
+                        <td>Annika Mcbride</td>
+                        <td>annika.Mcbride@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#6</th>
+                        <td>Fatimah Clark</td>
+                        <td>fatimah.Clark@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#7</th>
+                        <td>Klaudia Rhodes</td>
+                        <td>klaudia.Rhodes@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#8</th>
+                        <td>Tillie Lucero</td>
+                        <td>tillie.Lucero@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#9</th>
+                        <td>Sabrina Stephenson</td>
+                        <td>sabrina.Stephenson@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#10</th>
+                        <td>Annie Smith</td>
+                        <td>annie.Smith@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <div><i class="fas fa-eye"></i><i class="fas fa-pen"></i></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Modal -->
+            <div class="modal fade" id="edit-admin" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Edit Admin</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="account">
+                                <h6>Account</h6>
+                                <form action="" method="post">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Emir Wicks" disabled>
+
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" placeholder="emir.wicks@mail.com" disabled>
+                                </form>
+                            </div>
+
+                            <div class="vrification">
+                                <h6>Verification</h6>
+                                <div class="verified">
+                                    <p><i class="fas fa-check-circle"></i>Verified</p>
+                                    <p>2020/4/12</p>
+                                </div>
+                                <a href="#" style="cursor: not-allowed;">Send Verification Mail</a>
+                            </div>
+
+                            <div class="access-level">
+                                <form action="" method="post">
+                                    <select name="access-level" id="access-level">
+                                        <option value="">Admin</option>
+                                        <option value="Level-1">Level-1</option>
+                                        <option value="Level-2">Level-2</option>
+                                        <option value="Level-3">Level-3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="custom-access">
+                                <h6>Custom Access</h6>
+                                <form class="edit" action="" method="post">
+                                    <div><input type="checkbox" id="lecture" name="lecture"><label
+                                            for="lecture">Lecture</label></div>
+                                    <div><input type="checkbox" id="Coupon" name="Coupon"><label
+                                            for="Coupon">Coupon</label></div>
+                                    <div><input type="checkbox" id="Message" name="Message"><label
+                                            for="Message">Message</label></div>
+                                    <div><input type="checkbox" id="Setting" name="Setting"><label
+                                            for="Setting">Setting</label></div>
+                                    <div><input type="checkbox" id="task-menu" name="task-menu"><label
+                                            for="task-menu">Task menu</label></div>
+                                </form>
+                            </div>
+
+                            <div class="deactivate-account">
+                                <h6>Deactivate Account</h6>
+                                <div class="deactivate"><i class="fas fa-exclamation-triangle"></i>
+                                    <p>This cannot be undone!</p>
+                                </div>
+                                <a href="#">Deactivate This Accountl</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade collapse" id="view-admin" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                alt="">
+                        </div>
+                        <div class="modal-body">
+                            <div class="serial-number">
+                                <p>#1</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                            </div>
+                            <h6>Admin</h6>
+                            <h4>Emir Wicks</h4>
+                            <p>emir.wicks@mail.com</p>
+                            <div class="edit-bar">
+                                <p>Verified</p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true"></span><i class="fas fa-angle-left"></i></span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link current-page" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

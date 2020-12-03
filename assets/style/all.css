@@ -1,0 +1,1405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+}
+
+body a {
+  display: block;
+  text-decoration: none !important;
+}
+
+.sidebar {
+  background-color: #EDF4EE;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 100px;
+}
+
+.sidebar .logo {
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+
+.sidebar .menu {
+  margin-bottom: 465px;
+}
+
+.sidebar .menu li {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sidebar .menu li a {
+  color: #121212;
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 4px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar .menu li a:hover {
+  color: #2A8356;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.sidebar .menu li a i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-right: 19px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.sidebar .menu li .page-assignment {
+  color: #2A8356;
+  border-left: 4px solid #2A8356;
+}
+
+.sidebar .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 32px;
+}
+
+.sidebar .account .account-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.sidebar .account img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.sidebar .account .account-admin {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar .account .account-admin span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #0000009A;
+  font-weight: 300;
+}
+
+.wrap {
+  width: 100%;
+  padding: 32px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+
+.header h2 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #121212;
+  margin-right: 46px;
+}
+
+.header .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.header .navbar .dropdown a {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.header .navbar .dropdown a:hover {
+  color: #2A8356;
+}
+
+.header .navbar .dropdown a i {
+  margin-left: 7px;
+}
+
+.header .navbar .search-remind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar .search-remind a {
+  color: #121212;
+  margin-left: 26px;
+}
+
+.header .navbar .search-remind a:hover {
+  color: #2A8356;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assignment-list {
+  width: 30%;
+}
+
+.assignment-list .dropdown a {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.assignment-list .dropdown a:hover {
+  color: #2A8356;
+}
+
+.assignment-list .dropdown a i {
+  margin-left: 10px;
+}
+
+.assignment-list ul {
+  margin-top: 6px;
+  margin-right: 16px;
+}
+
+.assignment-list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #CDDDCD;
+  margin-bottom: -1px;
+  padding: 12px;
+}
+
+.assignment-list ul li:hover {
+  background-color: #EDF4EE;
+}
+
+.assignment-list ul li .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.assignment-list ul li .title h5 {
+  font-size: 12px;
+  line-height: 15px;
+  color: #121212;
+}
+
+.assignment-list ul li .title p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #121212;
+}
+
+.assignment-list ul li .text-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-list ul li .text-title h4 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.assignment-list ul li .text-title p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #0000009A;
+}
+
+.assignment-list ul .current-list {
+  background-color: #EDF4EE;
+}
+
+.assignment-discuss {
+  width: 80%;
+  position: relative;
+}
+
+.assignment-discuss p {
+  font-size: 12px;
+  line-height: 24px;
+  color: #707070;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.assignment-discuss .discuss {
+  border: 1px solid #CDDDCD;
+  margin-bottom: 32px;
+}
+
+.assignment-discuss .discuss .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+  background-color: #EDF4EE;
+  padding: 12px 17px;
+  border-bottom: 1px solid #CDDDCD;
+  margin: 0;
+}
+
+.assignment-discuss .discuss .title h5 {
+  font-size: 12px;
+  line-height: 15px;
+  color: #121212;
+  margin-bottom: 4px;
+}
+
+.assignment-discuss .discuss .title h4 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  font-weight: 700;
+}
+
+.assignment-discuss .discuss .title a {
+  color: #121212;
+}
+
+.assignment-discuss .discuss .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.assignment-discuss .discuss .post .account-img {
+  width: 40px;
+  height: 40px;
+}
+
+.assignment-discuss .discuss .post .account-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.assignment-discuss .discuss .post .post-text {
+  width: 90%;
+  border-bottom: 1px solid #CDDDCD;
+  margin-left: 8px;
+}
+
+.assignment-discuss .discuss .post .post-text .account-admin {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.assignment-discuss .discuss .post .post-text .account-admin span {
+  font-size: 12px;
+  line-height: 15px;
+  color: #0000009A;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+.assignment-discuss .discuss .post .post-text p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #121212;
+  text-align-last: left;
+}
+
+.assignment-discuss .discuss .post .post-text a {
+  width: 20%;
+  border: 1px solid #CDDDCD;
+  background-color: #EDF4EE;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.assignment-discuss .discuss .post .post-text a i {
+  font-size: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.assignment-discuss .discuss .post .post-text .remind {
+  background-color: #EDF4EE;
+  color: #2A8356;
+}
+
+.assignment-discuss .discuss .post-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.assignment-discuss .discuss .post-1 .account-img {
+  width: 40px;
+  height: 40px;
+}
+
+.assignment-discuss .discuss .post-1 .account-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.assignment-discuss .discuss .post-1 .post-text {
+  width: 90%;
+  margin-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-discuss .discuss .post-1 .post-text .account-admin {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.assignment-discuss .discuss .post-1 .post-text .account-admin span {
+  font-size: 12px;
+  line-height: 15px;
+  color: #0000009A;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+.assignment-discuss .discuss .post-1 .post-text .mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.assignment-discuss .discuss .post-1 .post-text .mark a {
+  color: #121212;
+  margin-left: 24px;
+}
+
+.assignment-discuss .discuss .post-1 .post-text .mark a:hover {
+  color: #2A8356;
+}
+
+.assignment-discuss .discuss .post-1 .post-text p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #121212;
+  text-align-last: left;
+}
+
+.assignment-discuss .discuss .post-1 .post-text .remind {
+  background-color: #EDF4EE;
+  color: #2A8356;
+}
+
+.assignment-discuss .function-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.assignment-discuss .function-column .switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assignment-discuss .function-column .switch a {
+  font-size: 24px;
+  margin-right: 48px;
+  color: #121212;
+}
+
+.assignment-discuss .function-column .switch a:hover {
+  color: #2A8356;
+}
+
+.assignment-discuss .function-column .function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assignment-discuss .function-column .function a.btn {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 8px 32px;
+  font-weight: 700;
+  color: #2A8356;
+  border: 1px solid #2A8356;
+  border-radius: 4px;
+  margin-left: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+.assignment-discuss .function-column .function a.btn:hover {
+  background-color: #2A8356;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.assignment-discuss .function-column .function .card {
+  width: 1120px;
+  height: 290px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #CDDDCD;
+  padding: 0;
+}
+
+.assignment-discuss .function-column .function .board-header {
+  background-color: #EDF4EE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.assignment-discuss .function-column .function .board-header a {
+  border: none;
+  color: #121212;
+  margin-right: 24px;
+  padding: 10px;
+}
+
+.assignment-discuss .function-column .function .board-header a:hover {
+  background-color: #2A8356;
+  color: #ffffff;
+}
+
+.assignment-discuss .function-column .function textarea {
+  resize: none;
+  border: 1px solid #CDDDCD;
+  border-bottom: 1px solid transparent;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-top: 16px;
+  padding-left: 24px;
+  color: #00000062;
+}
+
+.assignment-discuss .function-column .function .board-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  background-color: #EDF4EE;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 100px;
+}
+
+.sidebar .logo {
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+
+.sidebar .menu {
+  margin-bottom: 465px;
+}
+
+.sidebar .menu li {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sidebar .menu li a {
+  color: #121212;
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 4px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar .menu li a:hover {
+  color: #2A8356;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.sidebar .menu li a i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-right: 19px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.sidebar .menu li .page-admin {
+  color: #2A8356;
+  border-left: 4px solid #2A8356;
+}
+
+.sidebar .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 32px;
+}
+
+.sidebar .account .account-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.sidebar .account img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.sidebar .account .account-admin {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar .account .account-admin span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #0000009A;
+  font-weight: 300;
+}
+
+.add-admin {
+  background-color: transparent;
+  border: 0px solid #000;
+  color: #121212;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.add-admin i {
+  color: #2A8356;
+  margin-right: 18px;
+}
+
+.add-admin:hover {
+  background-color: transparent;
+  color: #2A8356;
+}
+
+.modal-content {
+  padding: 32px 32px 16px 32px;
+}
+
+.modal-content .modal-header {
+  padding: 0;
+  border: 0px solid #000;
+  margin-bottom: 32px;
+}
+
+.modal-content .modal-header h5 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #121212;
+}
+
+.modal-content .modal-header span {
+  font-size: 24px;
+  line-height: 29px;
+  color: #121212;
+}
+
+.modal-content .modal-body {
+  padding: 0;
+}
+
+.modal-content .modal-body .account {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.modal-content .modal-body .account h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.modal-content .modal-body .account label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.modal-content .modal-body .account input {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 51px;
+}
+
+.modal-content .modal-body .vrification {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.modal-content .modal-body .vrification h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.modal-content .modal-body .vrification .verified {
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-content .modal-body .vrification .verified i {
+  font-size: 22px;
+  color: #E3006E;
+  margin-right: 9px;
+}
+
+.modal-content .modal-body .vrification a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A8356;
+  font-weight: 700;
+  padding: 16px 130px;
+  border: 1px solid #CDDDCD;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.modal-content .modal-body .vrification a:hover {
+  background-color: #2A8356;
+  color: #ffffff;
+}
+
+.modal-content .modal-body .access-level {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.modal-content .modal-body .access-level h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.modal-content .modal-body .access-level select {
+  font-size: 16px;
+  line-height: 19px;
+  color: #0000009A;
+  width: 100%;
+  height: 51px;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-content .modal-body .custom-access {
+  margin-bottom: 48px;
+}
+
+.modal-content .modal-body .custom-access h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.modal-content .modal-body .custom-access form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-content .modal-body .custom-access form input {
+  width: 24px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+
+.modal-content .modal-body .custom-access form label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.modal-content .modal-footer {
+  border: 0px solid #000;
+}
+
+.modal-content .modal-footer button {
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A8356;
+  border: 1px solid #2A8356;
+  padding: 8px 32px;
+  background-color: transparent;
+}
+
+.modal-content .modal-footer button:hover {
+  background-color: #2A8356;
+  color: #ffffff;
+}
+
+.admin-list {
+  margin-bottom: 63px;
+}
+
+.admin-list thead th {
+  border-top: 0px solid #000;
+  border-color: #121212;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  font-weight: 700;
+}
+
+.admin-list thead th i {
+  color: #2A8356;
+  margin-left: 10px;
+}
+
+.admin-list tbody th, .admin-list tbody td {
+  border-bottom: 1px solid #EDF4EE;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+}
+
+.admin-list tbody tr:hover {
+  background-color: #EDF4EE;
+}
+
+.admin-list tbody tr td:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.admin-list tbody tr td:last-child div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-list tbody tr td:last-child a {
+  color: #121212;
+}
+
+.admin-list tbody tr td:last-child a:hover {
+  color: #2A8356;
+}
+
+.admin-list tbody tr td:last-child i:last-child {
+  margin-left: 25px;
+}
+
+.admin-list .modal-content {
+  padding: 32px 32px 16px 32px;
+}
+
+.admin-list .modal-content .modal-header {
+  padding: 0;
+  border: 0px solid #000;
+  margin-bottom: 32px;
+}
+
+.admin-list .modal-content .modal-header h5 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #121212;
+}
+
+.admin-list .modal-content .modal-header span {
+  font-size: 24px;
+  line-height: 29px;
+  color: #121212;
+}
+
+.admin-list .modal-content .modal-body {
+  padding: 0;
+}
+
+.admin-list .modal-content .modal-body .account {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .account h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.admin-list .modal-content .modal-body .account label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #121212;
+  margin-bottom: 4px;
+}
+
+.admin-list .modal-content .modal-body .account input {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 51px;
+  padding: 16px;
+  background-color: #EDF4EE;
+  border: 0px solid #000;
+}
+
+.admin-list .modal-content .modal-body .account input::-webkit-input-placeholder {
+  color: #121212;
+}
+
+.admin-list .modal-content .modal-body .account input:-ms-input-placeholder {
+  color: #121212;
+}
+
+.admin-list .modal-content .modal-body .account input::-ms-input-placeholder {
+  color: #121212;
+}
+
+.admin-list .modal-content .modal-body .account input::placeholder {
+  color: #121212;
+}
+
+.admin-list .modal-content .modal-body .vrification {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .vrification h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.admin-list .modal-content .modal-body .vrification .verified {
+  margin-bottom: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-list .modal-content .modal-body .vrification .verified p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  font-weight: 700;
+}
+
+.admin-list .modal-content .modal-body .vrification .verified i {
+  font-size: 20px;
+  color: #2A8356;
+  margin-right: 9px;
+}
+
+.admin-list .modal-content .modal-body .vrification a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #CDDDCD;
+  font-weight: 700;
+  padding: 16px 130px;
+  border: 1px solid #CDDDCD;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .vrification a:hover {
+  background-color: transparent;
+  color: #CDDDCD;
+}
+
+.admin-list .modal-content .modal-body .access-level {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .access-level h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.admin-list .modal-content .modal-body .access-level select {
+  font-size: 16px;
+  line-height: 19px;
+  color: #0000009A;
+  width: 100%;
+  height: 51px;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .custom-access {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #CDDDCD;
+}
+
+.admin-list .modal-content .modal-body .custom-access h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.admin-list .modal-content .modal-body .custom-access form.edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin-list .modal-content .modal-body .custom-access form.edit input {
+  width: 24px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+
+.admin-list .modal-content .modal-body .custom-access form.edit label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account {
+  border-bottom: 1px solid #CDDDCD;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account .deactivate {
+  margin-bottom: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account .deactivate p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #E3006E;
+  font-weight: 700;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account .deactivate i {
+  font-size: 20px;
+  color: #E3006E;
+  margin-right: 9px;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #E3006E;
+  font-weight: 700;
+  padding: 16px 121px;
+  border: 1px solid #E3006E;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.admin-list .modal-content .modal-body .deactivate-account a:hover {
+  background-color: #E3006E;
+  color: #ffffff;
+}
+
+.admin-list .modal-content .modal-footer {
+  border: 0px solid #000;
+}
+
+.admin-list .modal-content .modal-footer button {
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A8356;
+  border: 1px solid #2A8356;
+  padding: 8px 32px;
+  background-color: transparent;
+}
+
+.admin-list .modal-content .modal-footer button:hover {
+  background-color: #2A8356;
+  color: #ffffff;
+}
+
+.collapse .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collapse .modal-content .modal-header {
+  width: 145px;
+  height: 145px;
+  margin: 0;
+}
+
+.collapse .modal-content .modal-header img {
+  max-width: 100%;
+  height: 145px;
+}
+
+.collapse .modal-content .modal-body {
+  margin-left: 24px;
+}
+
+.collapse .modal-content .modal-body .serial-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.collapse .modal-content .modal-body .serial-number p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+  margin: 0;
+}
+
+.collapse .modal-content .modal-body h6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+}
+
+.collapse .modal-content .modal-body h4 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #121212;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.collapse .modal-content .modal-body p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #0000009A;
+  margin-bottom: 16px;
+}
+
+.collapse .modal-content .modal-body .edit-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.collapse .modal-content .modal-body .edit-bar p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #121212;
+  background-color: #EDF4EE;
+  padding: 4px 8px;
+  margin: 0;
+}
+
+.collapse .modal-content .modal-body .edit-bar a.btn {
+  background-color: transparent;
+  border: none;
+  color: #2A8356;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav a.page-link {
+  border: 1px solid #2A8356;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+nav a.page-link:hover {
+  color: #ffffff;
+  background-color: #2A8356;
+  border: 1px solid #2A8356;
+}
+
+nav a.page-link i {
+  color: #000000;
+}
+
+nav a.current-page {
+  background-color: #2A8356;
+  color: #ffffff;
+}
+/*# sourceMappingURL=all.css.map */

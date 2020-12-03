@@ -1,0 +1,15 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', 'Roboto', sans-serif;
+    display: flex;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        display: block;
+        text-decoration: none !important;
+    }
+}
